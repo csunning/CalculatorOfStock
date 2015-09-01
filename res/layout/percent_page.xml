@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="计算百分比线"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_highestprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_highestprice"
+            android:text="@string/tt_high_price"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/highest_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_highestprice"
+            android:layout_toRightOf="@id/tv_highestprice"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="numberDecimal"
+            android:padding="5dp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_lowestprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_highestprice"
+            android:text="@string/tt_low_price"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/lowest_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_lowestprice"
+            android:layout_alignBottom="@id/tv_lowestprice"
+            android:layout_below="@id/highest_price"
+            android:layout_toRightOf="@id/tv_lowestprice"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:padding="5dp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_persent_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_lowestprice"
+            android:layout_alignRight="@id/tv_lowestprice"
+            android:layout_below="@id/tv_lowestprice"
+            android:gravity="center_horizontal"
+            android:text="30%"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/percent_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/lowest_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_persent_30"
+            android:layout_alignBottom="@id/tv_persent_30"
+            android:layout_below="@id/lowest_price"
+            android:ems="10"
+            android:enabled="false"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/tv_percent_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_persent_30"
+            android:layout_alignRight="@id/tv_lowestprice"
+            android:layout_below="@id/tv_persent_30"
+            android:gravity="center_horizontal"
+            android:text="50%"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/percent_50"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/lowest_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_percent_50"
+            android:layout_below="@id/percent_30"
+            android:enabled="false"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/tv_percent_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_persent_30"
+            android:layout_alignRight="@id/tv_lowestprice"
+            android:layout_below="@id/tv_percent_50"
+            android:gravity="center_horizontal"
+            android:text="60%"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/percent_60"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/lowest_price"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_percent_60"
+            android:layout_below="@id/percent_50"
+            android:layout_toRightOf="@id/tv_percent_60"
+            android:enabled="false"
+            android:padding="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="CalPercent"
+            android:text="@string/cal" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ClearET"
+            android:text="@string/clear" />
+    </LinearLayout>
+
+</LinearLayout>

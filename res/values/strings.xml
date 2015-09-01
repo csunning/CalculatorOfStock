@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">股票计算器</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="door">欢迎使用股票计算器</string>
+	<string name="choice_tittle">功能选择</string>
+	<string name="cover">计算补仓成本价</string>
+	<string name="percent">计算百分比线</string>
+	<string name="tt_high_price">区间最高价:</string>
+	<string name="tt_low_price">区间最低价:</string>
+	<string name="tt_now_price">现价:</string>
+	<string name="tt_cover_num">补仓数量:</string>
+	<string name="tt_hold_price">持有成本:</string>
+	<string name="tt_hold_num">持股票数:</string>
+	<string name="tt_cal_result">预计成本:</string>
+	<string name="cal">计算</string>
+	<string name="introduce">软件介绍</string>
+	<string name="transaction_cost">设置交易费用</string>
+	<string name="instroduce_information">
+	           说明:本作者也是一名新股民，开户还不到半年，曾经陆陆续续的看过一下股票技术交易的经典书籍，
+	    以及结合交易中的一些体会。
+	</string>
+	<string name="commission">券商佣金</string>
+	<string name="stamp_duty">印花税</string>
+	<string name="transfer_fee">过户费</string>
+	<string name="clear">清除</string>
+	
+</resources>
